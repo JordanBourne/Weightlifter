@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Weightlifer</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/bootstrap.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">  
+  </head>
+<body ng-app = "app" ng-controller = "HomeCtrl">
+    <div class = "header">
+        <div class = "headContent">
+            <a href = "#/"><div class = "headButtonL headTitle">Weightlifter</div></a>
+            <a href = "#/login"><div class = "headButtonR headLogIn">Log In</div></a>
+            <a href = "#/register"><div class = "headButtonR headRegister">Register</div></a>
+            <a href = "#/programs"><div class = "headButtonR headPrograms">Programs</div></a>
+            <a href = "#/"><div class = "headButtonR headAbout">Home</div></a>
+        </div>
+    </div>
+    <ui-view></ui-view>
+    <div class = "footer"></div>
+    
+    <script src="javascripts/angular.min.js"></script>     
+    <script src="javascripts/angular-ui-router.js"></script>     
+    <script src="javascripts/angularIndex.js"></script>   
+</body>
+</html>
