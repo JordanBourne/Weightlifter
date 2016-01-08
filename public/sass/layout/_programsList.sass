@@ -22,31 +22,35 @@
     width: 100%
     margin: auto
     margin-bottom: 20px
+    overflow: auto
+    
+.searchForm * 
+    float: left
     
 .searchButton
     width: 25%
     font-size: 20px
     padding: 2px
     text-align: center
-    background-color: $site-color-main
-    border: 2px solid $site-color-main
+    background-color: $color-1
+    border: 2px solid $color-1
     color: white
     transition: all .3s ease
     
 .searchButton:hover
-    background-color: $site-color-secondary
-    border-color: $site-color-secondary
+    background-color: $color-2
+    border-color: $color-2
     
 .newProgramButton
     @extend .searchButton
     margin-left: 1%
     background-color: white
-    color: $site-color-main
+    color: $color-1
     
 .newProgramButton:hover
     background-color: white
-    border-color: $site-color-secondary
-    color: $site-color-secondary
+    border-color: $color-2
+    color: $color-2
     
 .programSummary
     width: 100%
