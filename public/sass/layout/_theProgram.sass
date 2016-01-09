@@ -1,46 +1,60 @@
 .theProgram
     font-size: 18px
-    margin: 20px
+    padding: 20px
     overflow: auto
+    padding-top: 80px
+    height: 100vh
+    background-color: $color-offwhite
     
 .theProgramTitle
     text-align: center
     font-size: 35px
-    margin-bottom: 20px
     padding: 10px
-    border-bottom: 1px solid black
-    width: 90%
-    margin: auto
-    margin-top: 90px
+    border-bottom: $border-1
+    color: white
+    background-color: $color-2
     
 .theProgramDescription
     padding: 10px
-    margin-bottom: 10px
+    margin: 10px
     
 .theProgramming
-    width: 60%
+    width: 65%
     float: left
+    background-color: white
+    border: $border-1
+    box-shadow: 0px 4px $color-2
     
 .programmingBody
-    padding: 10px
+    margin: 10px
     
-.whatsYourMax
-    font-size: 14px
-    margin-bottom: 10px
+.theWorkout
+    border: $border-1
+    margin-bottom: 15px
 
 .overviewTitle
     font-size: 25px
-    background-color: $color-4
+    text-align: center
+    background-color: $color-2
     color: white
     padding: 5px
+    
+.overviewWorkout
+    padding: 5px
+    text-align: center
     
 .exerciseList
     list-style-type: none
     overflow: auto
+    padding: 0px
+    margin: 0px
     
 .exerciseList *
     float: left
     display: inline-block
+    
+.exerciseItem:nth-child(2n+3)
+    background-color: $color-offwhite
     
 .exerciseItem
     width: 100%
@@ -50,6 +64,7 @@
     
 .exerciseName
     width: 40%
+    padding-left: 10px
         
 .exerciseSets
     width: 20%
@@ -61,8 +76,4 @@
         
 .exerciseWeight
     width: 20%
-    text-align: right
-    
-.programDetailInfo
-    width: 35%
-    float: right
+    text-align: center

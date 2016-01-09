@@ -1,7 +1,7 @@
 /* line 1, ../sass/layout/_header.sass */
 .header {
   width: 100%;
-  background-color: #a3333d;
+  background-color: #16425b;
   margin: 0px auto;
   padding: 0px;
   text-align: center;
@@ -42,7 +42,7 @@
 
 /* line 33, ../sass/layout/_header.sass */
 .headButtonR:hover, .headButtonL:hover {
-  background-color: #f64740;
+  background-color: #2f6690;
 }
 
 /* line 1, ../sass/layout/_home.sass */
@@ -105,8 +105,8 @@
 
 /* line 48, ../sass/layout/_home.sass */
 .pageHome a:hover, .pageHome a:focus {
-  color: #f64740;
-  border-color: #f64740;
+  color: #2f6690;
+  border-color: #2f6690;
   text-decoration: none;
 }
 
@@ -147,7 +147,7 @@
   text-align: center;
   padding: 60px 5% 60px 5%;
   font-size: 22px;
-  background-color: #f64740;
+  background-color: #2f6690;
 }
 
 /* line 1, ../sass/layout/_programsList.sass */
@@ -197,30 +197,30 @@
   font-size: 20px;
   padding: 2px;
   text-align: center;
-  background-color: #a3333d;
-  border: 2px solid #a3333d;
+  background-color: #16425b;
+  border: 2px solid #16425b;
   color: white;
   transition: all 0.3s ease;
 }
 
 /* line 40, ../sass/layout/_programsList.sass */
 .searchButton:hover, .newProgramButton:hover {
-  background-color: #f64740;
-  border-color: #f64740;
+  background-color: #2f6690;
+  border-color: #2f6690;
 }
 
 /* line 44, ../sass/layout/_programsList.sass */
 .newProgramButton {
   margin-left: 1%;
   background-color: white;
-  color: #a3333d;
+  color: #16425b;
 }
 
 /* line 50, ../sass/layout/_programsList.sass */
 .newProgramButton:hover {
   background-color: white;
-  border-color: #f64740;
-  color: #f64740;
+  border-color: #2f6690;
+  color: #2f6690;
 }
 
 /* line 55, ../sass/layout/_programsList.sass */
@@ -228,7 +228,7 @@
   width: 100%;
   overflow: auto;
   padding: 15px 0px 15px 0px;
-  border-bottom: 1px solid #929292;
+  border-bottom: 1px solid #2f6690;
 }
 
 /* line 61, ../sass/layout/_programsList.sass */
@@ -291,7 +291,7 @@
   color: #424242;
   font-size: 25px;
   text-align: center;
-  border-bottom: 1px solid #929292;
+  border-bottom: 1px solid #2f6690;
 }
 
 /* line 13, ../sass/layout/_programsFilter.sass */
@@ -304,106 +304,154 @@
 .filterSection {
   padding: 20px 0px 15px 20px;
   line-height: 200%;
-  border-bottom: 1px solid #929292;
+  border-bottom: 1px solid #2f6690;
 }
 
 /* line 1, ../sass/layout/_theProgram.sass */
 .theProgram {
   font-size: 18px;
-  margin: 20px;
+  padding: 20px;
   overflow: auto;
+  padding-top: 80px;
+  height: 100vh;
+  background-color: #edf8ff;
 }
 
-/* line 6, ../sass/layout/_theProgram.sass */
-.theProgramTitle {
+/* line 9, ../sass/layout/_theProgram.sass */
+.theProgramTitle, .detailsTitle {
   text-align: center;
   font-size: 35px;
-  margin-bottom: 20px;
   padding: 10px;
-  border-bottom: 1px solid black;
-  width: 90%;
-  margin: auto;
-  margin-top: 90px;
+  border-bottom: 1px solid #2f6690;
+  color: white;
+  background-color: #2f6690;
 }
 
-/* line 16, ../sass/layout/_theProgram.sass */
+/* line 17, ../sass/layout/_theProgram.sass */
 .theProgramDescription {
   padding: 10px;
-  margin-bottom: 10px;
+  margin: 10px;
 }
 
-/* line 20, ../sass/layout/_theProgram.sass */
+/* line 21, ../sass/layout/_theProgram.sass */
 .theProgramming {
-  width: 60%;
+  width: 65%;
   float: left;
+  background-color: white;
+  border: 1px solid #2f6690;
+  box-shadow: 0px 4px #2f6690;
 }
 
-/* line 24, ../sass/layout/_theProgram.sass */
+/* line 28, ../sass/layout/_theProgram.sass */
 .programmingBody {
-  padding: 10px;
-}
-
-/* line 27, ../sass/layout/_theProgram.sass */
-.whatsYourMax {
-  font-size: 14px;
-  margin-bottom: 10px;
+  margin: 10px;
 }
 
 /* line 31, ../sass/layout/_theProgram.sass */
+.theWorkout {
+  border: 1px solid #2f6690;
+  margin-bottom: 15px;
+}
+
+/* line 35, ../sass/layout/_theProgram.sass */
 .overviewTitle {
   font-size: 25px;
-  background-color: #477998;
+  text-align: center;
+  background-color: #2f6690;
   color: white;
   padding: 5px;
 }
 
-/* line 37, ../sass/layout/_theProgram.sass */
+/* line 42, ../sass/layout/_theProgram.sass */
+.overviewWorkout {
+  padding: 5px;
+  text-align: center;
+}
+
+/* line 46, ../sass/layout/_theProgram.sass */
 .exerciseList {
   list-style-type: none;
   overflow: auto;
+  padding: 0px;
+  margin: 0px;
 }
 
-/* line 41, ../sass/layout/_theProgram.sass */
+/* line 52, ../sass/layout/_theProgram.sass */
 .exerciseList * {
   float: left;
   display: inline-block;
 }
 
-/* line 45, ../sass/layout/_theProgram.sass */
+/* line 56, ../sass/layout/_theProgram.sass */
+.exerciseItem:nth-child(2n+3) {
+  background-color: #edf8ff;
+}
+
+/* line 59, ../sass/layout/_theProgram.sass */
 .exerciseItem {
   width: 100%;
 }
 
-/* line 48, ../sass/layout/_theProgram.sass */
+/* line 62, ../sass/layout/_theProgram.sass */
 .exerciseItem:first-child {
-  border-bottom: 1px solid #929292;
+  border-bottom: 1px solid #2f6690;
 }
 
-/* line 51, ../sass/layout/_theProgram.sass */
+/* line 65, ../sass/layout/_theProgram.sass */
 .exerciseName {
   width: 40%;
+  padding-left: 10px;
 }
 
-/* line 54, ../sass/layout/_theProgram.sass */
+/* line 69, ../sass/layout/_theProgram.sass */
 .exerciseSets {
   width: 20%;
   text-align: center;
 }
 
-/* line 58, ../sass/layout/_theProgram.sass */
+/* line 73, ../sass/layout/_theProgram.sass */
 .exerciseReps {
   width: 20%;
   text-align: center;
 }
 
-/* line 62, ../sass/layout/_theProgram.sass */
+/* line 77, ../sass/layout/_theProgram.sass */
 .exerciseWeight {
   width: 20%;
+  text-align: center;
+}
+
+/* line 1, ../sass/layout/_theProgramDetails.sass */
+.programDetailInfo {
+  width: 30%;
+  float: right;
+  background-color: white;
+  border: 1px solid #2f6690;
+  box-shadow: 0px 4px #2f6690;
+}
+
+/* line 11, ../sass/layout/_theProgramDetails.sass */
+.detailsCategory:nth-child(2n+3) {
+  background-color: #edf8ff;
+}
+
+/* line 14, ../sass/layout/_theProgramDetails.sass */
+.detailsCategory {
+  padding: 10px 0px 10px 0px;
+  width: 100%;
+  overflow: auto;
+}
+
+/* line 19, ../sass/layout/_theProgramDetails.sass */
+.detailsCategoryTitle {
+  float: left;
+  width: 48%;
   text-align: right;
 }
 
-/* line 66, ../sass/layout/_theProgram.sass */
-.programDetailInfo {
-  width: 35%;
+/* line 24, ../sass/layout/_theProgramDetails.sass */
+.detailsInfo {
   float: right;
+  width: 48%;
+  text-align: left;
 }
