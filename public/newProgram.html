@@ -1,0 +1,16 @@
+<div class = "theProgram">
+    <form class = "newProgramForm">
+        Name: <input type = "text" ng-model = "name"> <br>
+        Description: <input type = "text" ng-model = "description"> <br>
+        ProgramLink: <input type = "text" ng-model = "programLink"> <br>
+        Format: <input type = "text" ng-model = "format"> <br>
+        Experience: <input type = "text" ng-model = "experience"> <br>
+        Sport: <input type = "text" ng-model = "sport"> <br>
+        Days: <input type = "number" ng-model = "days"> <br>
+        Weeks: <input type = "number" ng-model = "weeks"> 
+        <button id = "generateWeeks" ng-click = "addWeek()">Generate Weekly Plan</button><br>
+        <div ng-repeat = "week in totalWeeks">
+            <div class = "newWeekNumber">Week #{{week}}</div>
+        </div>
+    </form>
+</div>
