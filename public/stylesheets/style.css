@@ -464,3 +464,16 @@
   width: 48%;
   text-align: left;
 }
+
+/* line 1, ../sass/layout/_newProgram.sass */
+.newWeekWorkout {
+  width: 100%;
+  text-align: center;
+  overflow: auto;
+}
+
+/* line 6, ../sass/layout/_newProgram.sass */
+.weekDay {
+  width: 14.28%;
+  float: left;
+}

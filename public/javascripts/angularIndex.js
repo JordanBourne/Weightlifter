@@ -53,17 +53,29 @@ app.controller('TheProgramCtrl', [
 
 app.controller('NewProgramCtrl', [
     '$scope',
-    function($scope) {
+    function($scope) {        
+        $scope.totalExercises = [];
+        
         $scope.addWeek = function() {
             $scope.totalWeeks = [];
             
-            if($scope.weeks < 40) {
+            if($scope.weeks < 53) {
                 for(var i = 1; i <= $scope.weeks; i++) {
                     $scope.totalWeeks.push(i);
+                    $scope.totalExercises.push([],[],[],[],[],[],[]);
                 }
             }
-            
-            console.log($scope.totalWeeks);
+            console.log($scope.totalExercises);
+        }
+
+        
+        $scope.addExercise = function (num) {
+            $scope.totalExercises[num].push($scope.totalExercises[num].length);
+            console.log($scope.totalExercises[num]);
+        }
+        
+        $scope.removeExercise = function (num) {
+            $scope.totalExercises[num].pop();
         }
     }
 ]);

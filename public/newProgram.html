@@ -8,9 +8,18 @@
         Sport: <input type = "text" ng-model = "sport"> <br>
         Days: <input type = "number" ng-model = "days"> <br>
         Weeks: <input type = "number" ng-model = "weeks"> 
-        <button id = "generateWeeks" ng-click = "addWeek()">Generate Weekly Plan</button><br>
-        <div ng-repeat = "week in totalWeeks">
+        <button ng-click = "addWeek()">Generate Weekly Plan</button><br>
+        <div ng-repeat = "week in totalWeeks" class = "newWeekWorkout">
             <div class = "newWeekNumber">Week #{{week}}</div>
+            <div class = "weekDay" ng-repeat = "day in [1,2,3,4,5,6,7]">
+                Day {{7 * (week - 1) + day}} <br>
+                <div class = "exerciseContainer" ng-repeat = "exercise in totalExercises[7 * (week - 1) + day]">
+                    <input type = "text" ng-model = "">
+                </div>
+                <button ng-click = "addExercise(7 * (week - 1) + day)">Add Exercise</button><br>
+                <button ng-click = "removeExercise(7 * (week - 1) + day)">Remove Exercise</button><br>
+                
+            </div>
         </div>
     </form>
 </div>
